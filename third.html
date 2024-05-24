@@ -1,57 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fi">
 <head>
-    <title>6B assignment</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Ota yhteyttä</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-<body>
     <header>
-        <h1 id="otsikko">Kaupunkien liikuntapalvelut</h1>
-    </header>
-
-    <nav>
-        <div class="wrapper">
-            <div>
-                <a href="index.html">Etusivu </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Kuntosali</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="second.html">Palvelut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="third.html">Ota yhteyttä</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="neljäs.html">Yhteystiedot</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <a href="second.html"> Kuvagalleria</a>
-            </div>
-            <div>
-                <a href="third.html"> Third HTML</a>
-            </div>
-        </div>
-    </nav>
-
-    
-    <section id="Helsinki liikuntapalvelut">
-        <nav id="nav2">
-            <ul>
-                <li><a href="https://liikunta.hel.fi" target="_blank">Helsinki</a></li>
-                <li><a href="https://www.vantaa.fi/fi/palveluhakemisto/palvelu/liikuntapalvelut" target="_blank">Vantaa</a></li>
-                <li><a href="https://www.kerava.fi/kulttuuri-ja-vapaa-aika/liikunta/" target="_blank">Kerava</a></li>
-            </ul>
         </nav>
+        <h1 class="text-center">Ota yhteyttä</h1>
+    </header>
+    <main class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">Nimi:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Osoite:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Sähköposti:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Kuinka voimme auttaa sinua?:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
+    </main>
 
-        <div class="nav-vertical">
-            <h1 id="kolmas">Liikuntapalvelut</h1>
-            <p>Jokaisella kaupungilla on Suomessa omat liikuntapalvelunsa. 
-              Yllä olevista linkeistä pääset tutustumaan Helsingin, Vantaan ja Keravan palveluihin</p>
-        </div>
-
-        <div class="nav-horizontal">
-            <p>Kokeilemalla löydät itsellesi sopivan liikuntamuodon!</p>
-        </div>
-
-    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+    </footer>
     
 
- 
-
-</body>
-
-</html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
